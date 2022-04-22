@@ -1,0 +1,148 @@
+#swap-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ohm-card {
+    padding: 30px !important;
+  }
+
+  .line-border {
+    border: solid 2px #a6a9be;
+    border-radius: 5px;
+  }
+
+  .dash-border {
+    border: dashed 2px #a6a9be;
+    border-radius: 5px;
+  }
+
+  .price-impact {
+    .MuiButton-contained {
+      background: #f44336;
+      color: #fff;
+    }
+  }
+
+  .justify-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .multichain-swap-banner {
+    background-image: url("../../assets/images/multi-chain-swap.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    width: 100%;
+    max-width: 833px;
+    aspect-ratio: 5/1;
+  }
+
+  .bonding-banner {
+    background-image: url("../../assets/images/bonding.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    max-width: 833px;
+    width: 100%;
+    aspect-ratio: 5/1;
+  }
+
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.network-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #8E95A3;
+  border-radius: 5px;
+}
+
+.token-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background: #8E95A3;
+  border-radius: 5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bond-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  background: #8E95A3;
+  border-radius: 5px;
+
+  .MuiTable-root {
+    margin: 10px 0;
+  }
+
+  .MuiTableCell-head {
+    color: white !important;
+  }
+
+  .MuiTableCell-root {
+    p {
+      margin: 0 !important;
+      display: flex !important;
+      align-items: center;
+      // justify-content: flex-start;
+      white-space: nowrap;
+      img {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .MuiTableBody-root .MuiTableRow-root .MuiTableCell-alignLeft.bond-name-cell {
+    justify-content: space-between;
+    display: flex;
+    div.bond-name {
+      width: 60%;
+      margin-left: 5px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      align-items: flex-start;
+      p {
+        margin-bottom: unset !important;
+        line-height: 140% !important;
+      }
+      svg {
+        margin-left: 3px !important;
+        font-size: 1.2em !important;
+      }
+    }
+  }
+}
+
+body[is-paralyzed] {
+  pointer-events: none;
+  cursor: progress;
+
+  .MuiSnackbar-root {
+    a[href], button {
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+}

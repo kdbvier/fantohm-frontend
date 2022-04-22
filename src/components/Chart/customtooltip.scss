@@ -1,0 +1,32 @@
+.recharts-tooltip-wrapper {
+  .MuiPaper-root.ohm-card {
+    background-color: rgb(60,67,78);
+  }
+}
+
+.tooltip-container {
+  min-width: 175px;
+  border: 1px solid rgba(118, 130, 153, 0.2);
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 1rem;
+    height: 1.5em;
+    white-space: nowrap;
+  }
+
+  .tooltip-bulletpoint {
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .tooltip-date {
+    margin-top: 13px;
+  }
+}

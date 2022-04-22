@@ -1,0 +1,164 @@
+* {
+  outline: none;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+html,
+body,
+#root {
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  z-index: 1;
+  background-size: cover;
+  font-family: "Montserrat";
+  overflow: hidden;
+  transition: all ease 0.33ms;
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 0 !important;
+}
+
+.ohm-card {
+  max-width: 833px;
+  .card-header {
+    width: 100%;
+    min-height: 33px;
+    margin-bottom: 10px;
+    h5 {
+      font-weight: 600 !important;
+    }
+  }
+
+  .help-text {
+    margin: 10px 0px;
+  }
+
+  .fhud-banner {
+    background-image: url("assets/images/USDB_Banner.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+    padding-top: 40%;
+    height: auto;
+  }
+
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 12px 0px;
+  }
+
+  .data-row-centered {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 12px 0px;
+    .marginedBtn {
+      margin: 0.3rem;
+    }
+  }
+}
+
+.ohm-pairs {
+  display: flex;
+  align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+a:hover svg {
+  color: inherit;
+}
+
+@media (orientation: landscape) {
+  .video {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:50%;
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    width:100%;
+    height:auto;
+    z-index:-1;
+    text-align:center;
+    padding-top:56.65%;
+
+  }
+  .video iframe {position:absolute;left:0;top:0;width:100%; height:100%;}
+}
+@media (orientation: portrait) {
+  .video {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:50%;
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    width:160%;
+    height:100%;
+    z-index:-1;
+    text-align:center;
+    padding-top:100%;
+
+
+  }
+  .video iframe {position:absolute;left:50%;top:0;width:calc(100vh*2); height:100%;
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);}
+}
+
+
+@media (max-aspect-ratio: 16/9) and (min-aspect-ratio: 1/1) {
+  .video {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:50%;
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    width:160%;
+    height:100%;
+    z-index:-1;
+    text-align:center;
+    padding-top:auto;
+
+
+  }
+  .video iframe {position:absolute;left:50%;top:0;width:calc(100vh*2); height:100%;
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+  }
+}

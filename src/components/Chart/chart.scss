@@ -1,0 +1,25 @@
+.chart-card-header {
+  margin-bottom: 20px;
+  .card-title-text {
+    overflow: hidden;
+    font-weight: 400;
+    white-space: nowrap;
+    width: auto;
+    text-overflow: ellipsis;
+  }
+}
+.ohm-chart {
+  //
+}
+
+.chart-popup-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  > .MuiPaper-root.ohm-card {
+    max-height: 95vh;
+    margin-bottom: 0;
+  }
+}
