@@ -2,7 +2,8 @@
 # [Ω FantOHM Frontend](https://app.fantohm.com/)
 This is the front-end repo for Olympus that allows users be part of the future of Greece.
 
-**_ Note We're currently in the process of switching to TypeScript. Please read  this  guide on how to use TypeScript for this repository. https://github.com/OlympusDAO/olympus-frontend/wiki/TypeScript-Refactor-General-Guidelines _**
+**_ Note We're currently in the process of switching to TypeScript. Please read  this  guide on how to use TypeScript for this repository. https://github.com/kdbvier/fantohm-frontend
+TypeScript-Refactor-General-Guidelines _**
 
 ##  🔧 Setting up Local Development
 
@@ -13,8 +14,8 @@ Required:
 
 
 ```bash
-$ git clone https://github.com/OlympusDAO/olympusdao.git
-$ cd olympusdao
+$ git clone https://github.com/kdbvier/fantohm-frontend
+$ cd fantohm-frontend
 
 # set up your environment variables
 # read the comments in the .env files for what is required/optional
@@ -70,16 +71,6 @@ Auto deployed on [Fleek.co](http://fleek.co/) fronted by [Cloudflare](https://ww
 
 _**TODO**: TheGraph implementation/how/why we use it._
 
-
-### Continuous deployment
-Commits to the follow branches are automatically deployed to their respective URLs.
-| Branch | URL |
-| --- | --- |
-| master | https://app.olympusdao.finance |
-| deploy | https://staging.olympusdao.finance |
-
-**Pull Requests**:
-Each PR into master will get its own custom URL that is visible on the PR page. QA & validate changes on that URL before merging into the deploy branch. 
 
 
 ## 👏🏽 Contributing Guidelines 
